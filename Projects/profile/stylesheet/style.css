@@ -1,0 +1,17 @@
+body {background-color: lightgreen;
+	margin: 0 auto;
+	text-align: center;
+}
+.left {
+	text-align: center;
+}
+
+h1 {color:blue;
+ font-size: 50px;
+
+}
+p {color:purple;
+	
+	font-weight: bold;
+	font-size: 18px;
+
