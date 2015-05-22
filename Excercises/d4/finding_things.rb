@@ -7,10 +7,25 @@ def find_position(string, letter)
 end
 
 
-def find_by_name(people)
+def find_by_name(hasharray, name)
+	answer = nil
+	hasharray.each do |item|
+		if item[:name] == name 
+			answer = item
+			break
+		end 
+	end 
+	answer
+end
 
 
 
-
-
-def filter_by_name(people)
+def filter_by_name(hasharray, name)
+	answer = []
+	hasharray.each do |item|
+		if item[:name] == name 
+			answer.push(item)		
+		end 
+	end 
+	answer
+end
