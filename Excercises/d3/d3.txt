@@ -1,0 +1,41 @@
+Morning
+E3.Notations
+1. Hash<Symbol, Array<String>>
+2. Hash<Symbol, Hash<Symbol, Array<Int>>>
+3. Array<Hash<Symbols, Array<String>>>
+4. Can't be done, hash has different values (hash vs. array vs. string)
+
+Afternoon
+E1
+1. fixnum
+2. float
+3. fixnum
+4. float
+5. string
+6. Trueclass
+7. Falseclass
+8. error
+9. x = ["a", "b"]
+10. Array
+11. Array
+12. String
+13. Fixnum
+14. Class
+15. Class
+
+E2
+1. Salmon
+2. Eat 
+
+E3
+1.loudness (20, "Fixnum")
+2. assigns the loudness to 20, prints/puts "IT'S SO LOUD", returns loudness
+3. 10 (in the method it is 20)
+
+E4
+1. String
+2. Array
+3. It can take 1 argument, it is optional, used to split the string based on the character that is put in.
+4. String
+5. "Hello Zack”.split
+6. join method

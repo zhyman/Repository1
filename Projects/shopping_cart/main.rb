@@ -8,8 +8,8 @@ cart.add(milk)
 cart.add(eggs)
 p cart.items
 
-
 p cart.total_price
-
+# 3.7
 cart.remove(milk)
 p cart.total_price
+# 1.3
