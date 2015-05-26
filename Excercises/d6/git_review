@@ -1,0 +1,24 @@
+1. What does the git init command do?
+
+
+2. What does git add do? How is it different from git commit?
+
+git add - moves from working directory to stage
+git commit - moves from stage to local repository
+
+3. When might you stage something and not commit it?
+staged-files
+committed-files
+
+example:
+
+4. Shortcut for adding all files and commiting?
+
+
+5. How do you unstage a staged file? How do you go back to an old version of a committed file?
+
+6. Why are commit messages very important?
+
+7. How do I revert to a previous commit?
+
+8. How do you exit out of vi? (Also called vim.)git-init creates an empty Git repository or reinitialize an existing one

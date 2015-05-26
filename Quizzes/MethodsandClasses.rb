@@ -30,6 +30,7 @@ end
 Q6
 
 class Dog
+	attr_accessor :name
 	def initialize(name)
 		@name = name
 	end
@@ -39,7 +40,7 @@ class Dog
 	end
 end
 
-zack = Dog.new(zack)
+zack = Dog.new("zack")
 
 zack.bark
 
@@ -59,8 +60,8 @@ end
 
 Q9*
 class Person
+	attr_accessor :age
 	def initialize(age)
-		attr_accessor :age
 		@age = age
 	end
 end
