@@ -1,3 +1,5 @@
 <% @articles.each do |article| %>
 <h1>#<%= article.id %> <%= article.title %></h1>
 <% end %>
+
+<%= link_to 'Back', root_path %>
