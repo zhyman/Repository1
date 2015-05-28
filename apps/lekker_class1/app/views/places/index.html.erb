@@ -3,5 +3,9 @@
 <% @places.each do |place| %>
 	<div>
 	<strong><%= link_to place.name, place_path(place) %> </strong>
+	
+	<p><%= link_to 'Edit', edit_place_path(place) %> </p>
+
+	<p><%= button_to 'Destroy', place_path(place), method: :delete, data: {confirm: "This place sucks."} %> </p>
 	</div>
 <% end %>

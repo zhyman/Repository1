@@ -1,0 +1,33 @@
+Treasure_Hunt
+
+How many routes does this project have? (take a look at routes.rb and make a guess, rake routes will not work because you can't use bundle for this project, your computers don't have postgresql installed yet
+Answer:17
+
+How many models?
+Answer:2
+
+How many controllers?
+Answer: 3 (including application)
+
+*Where does the CRUD logic take place?
+Answer: Models
+
+Which view allows us to create a new treasure?
+Answer: views/treasures/new.html.erb
+
+Which view allows us to comment on an existing treasure?
+Answer: views/comments/_comment.html.erb
+
+Which view is our home page?
+Answer: views/treasures/index.html.erb controls the veiw of the home page
+
+Which view lists all the treasures?
+Answer: views/treasures/index.html.erb
+
+Which attributes belong to treasures? And comments?
+Answer: 
+Treasure: title, description, time created and pudated
+Comments: bru, comment, treasure id, time created and updated
+
+Which file displays the attributes for each model?
+Answer: db/schema.rb or models
