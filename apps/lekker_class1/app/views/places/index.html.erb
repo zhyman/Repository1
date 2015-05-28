@@ -2,7 +2,6 @@
 
 <% @places.each do |place| %>
 	<div>
-	<strong><%= place.name %> </strong> 
-	<p> <%= place.description %> </p>
-<% end %>
+	<strong><%= link_to place.name, place_path(place) %> </strong>
 	</div>
+<% end %>

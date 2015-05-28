@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Place.delete_all
 
-Place.create! name: "Ace's of Spades", description: "Bar", address: "789 Bree St."
+Place.create! name: "Ace's of Spades", description: "This is a Bar", address: "789 Bree St."
 Place.create! name: "Lion's Head", description: "Really tall awesome and scary", address: "123 Kloof St."
 Place.create! name: "Table Mountain", description: "Even taller and more scary", address: "456 Orange St."
