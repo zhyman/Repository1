@@ -1,0 +1,11 @@
+<div align = 'center'> <h1> BruGram New Photo </h1> </div>
+<div align = 'center'> <%= form_for @photo, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :image %>
+
+  	<p>
+		<%= form.label :caption %><br>
+		<%= form.text_area :caption %>
+	</p>
+
+  <%= form.submit %> </div>
+<% end %>

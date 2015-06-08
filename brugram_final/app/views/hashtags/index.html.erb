@@ -1,0 +1,4 @@
+<div align='center'><h1>BruGram's Hashtags</div></h1>
+<% @hashtags.each do |tag| %>
+	<div align='center'><%=link_to tag.text, hashtag_path(tag)%><br></div>
+<%end%>

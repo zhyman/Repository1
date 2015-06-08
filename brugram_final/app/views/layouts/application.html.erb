@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brugram</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<div align='center'><h1>BruGram: Lekker Photos Taken by Brus</h1></div>
+
+<body>
+
+<div> <p class="navbar-text pull-right">
+<% if user_signed_in? %>
+  Logged in as <strong><%= current_user.email %></strong>.
+  <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> |
+  <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+<% else %>
+  <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
+  <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
+<% end %></div>
+
+
+<%= link_to image_tag("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcThNLW4KhiQEI_cI6Pnqld6GOPpsa0NEaYYOMGIjIf0g95oaX5QAQ"), new_photo_path %><br>
+<%= link_to image_tag("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzEGDRdFOuY9zisQeegO6zeKF8aGCueGIp37tJ-1wpCU5x-JH3"), hashtags_path %><br>
+<%= link_to image_tag("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tPTU3Ojo6Iys/RDNEQz45OjcBCgoKDQwNGhAQGzcmHyU1Li83NywsNy8yNC0wLS03Nzc3OCw0LDQsNzQsLTU0LCwsLDQ4Ny00LDc0LiwsNCw1K//AABEIADAAMAMBEQACEQEDEQH/xAAaAAEBAAIDAAAAAAAAAAAAAAAGBwQFAAEC/8QANRAAAQMDAQQHBgYDAAAAAAAAAQIDBAAFEQYHIVFhEhMiMUFxsRQjUoHB0RUWMpPS8CQzQ//EABoBAAIDAQEAAAAAAAAAAAAAAAQFAAIDAQb/xAApEQABAwMDAwQCAwAAAAAAAAABAAIDBBExEyFRBRJBImFxoeHwFZHR/9oADAMBAAIRAxEAPwC41FEY1LrSFZXhDYbXNuCv0x2Rkjz4UTDTOk3wFRzw1F3r/rmcemxGiQmz3JWQT60WKaBuTdDmpbyuM3/XME9J+NEmtjvSggH+/KoaaB2DZQVLeUo0zrOFenTDebXCuCf1R3hgny40JNTOj3yEQ14ck9DK6L7QdSfl2yKcZI9rfPVsA+B8VfL7UTSw6r7HAVXGwU40dMZEV6QtfTmOOEvOKOVHhv4U2e3x4SypJ7t8JpZGJF2dIbyllJ7bhG4chzoWaRsQ91WGEyH2WVItr0e4JjPSEttO7mnlDco/CeBqjZw5ncBurupi1/aTsgmuJDTSELSvozo7+GnEblbjv+VGRC49iu0/cHkKi7PtR/mKyJceI9rYPVvgeJ8FfP70pqYdJ9hhMWm4U72xzFv6kZjZ92xHGBzUST6CmFA20ZPKzed1gaB0lNv0z2hLi40FpWHXk96j8KeJ9K0qahsQt5VA0SbHCukSKzCjojxmwhpAwEikrnFxuVu1oaLBcmRWZsdceSgLbWMEGo1xabhRzQ4WKhev9JzrFOMlbrkqE8r3b6jkg9/RVz9adU1Q2UWwVgWiP4Ww2NzFsakfi5PVvxySOaSMeprOvbeMHhXYd162uwlN6kbk47DzIweYzn6V3p5vHbhCVTyx3ytfs7LiNW21AcWEFxWUhW49k+Fb1YGi4oankJmaLqm2fWrV01Aq0JguNqSpxPWlwEdnPhjlSyWjMcWpfhGRVzZJdMDn6Wslz9cJvrrceKowBJKUK6lH+vpbjnyrVsdJpgk72+1m6Sr1CANr/SC7Qy4vVlyQXFlAcGElW4dkeFHUgGi0oeokImcLrY7IYSnNRuycdhlkgnmSMfWsOoG0YHKJpHl7vhUHXenvx21e6A9pYPSb58RQFJPov3wVtWQGVnpyMKQ216VY7q3JbQEyI6jhLid2cY3inz2NlZ2+CvONndFJ3eRysu2XaVbrwq6x0tGQpS1EKSSntZzuzzrkkDZI9M4VI6p8cuoM/wCpAdot9H/KF+0r+VC/xsPujB1ifgf1+UUuL0q+XV2S4gKkSFAkNp3Z7twotjGxM7fAQzpnSyd3k8KvaE09+BWrDo/yXj03OXAUhq59Z+2AvR0cBiZ6snKTUKi0c1DpGDeCXcdVI+NI7/Oi6eskh2yEBV9PiqN8O5H7uh0nQNyaUQyW3E8QqmTepREbghJJOj1IPpIP0u42gLk6oB4ttp4lVR3UohgErsfR6kn1ED7THT2koNmIdx1sj41Du8qW1FY+bbATqk6fFT75dyf3ZIqER6//2Q=="), photos_path %><br>
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+<%= yield %>
+
+</body>
+</html>

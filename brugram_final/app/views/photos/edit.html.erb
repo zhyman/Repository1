@@ -1,0 +1,10 @@
+<%= form_for @photo, :html => { :multipart => true } do |form| %>
+  <%= form.file_field :image %>
+
+  	<p>
+		<%= form.label :caption %><br>
+		<%= form.text_area :caption %>
+	</p>
+
+  <%= form.submit %>
+<% end %>
